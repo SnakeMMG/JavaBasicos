@@ -13,9 +13,11 @@ public class Descuento {
 		System.out.println("total de la compra");
 		Scanner scanner = new Scanner(System.in);
 		
-		float total = scanner.nextInt();
 		
-		if (total < 1001) {
+		float total = scanner.nextFloat();//.nextFloat tecupera decimales
+		//float total = scanner.nextInt();// .nextInt recupera numeros enteros del usuario
+		
+		if (total < 1000) {
 			System.out.println("no hay descuentos por el momento y me deves $" + total + " carnal");
 		}else if(total < 5000) {
 			total *= .90;
